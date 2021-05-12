@@ -12,9 +12,8 @@ const MAX_VAL = 200;
 const MIN_VAL = 50;
 
 function init(event) {
-    let buttons = document.querySelectorAll("button");
-    let sortButton = buttons[0];
-    let dataButton = buttons[1];
+    let sortButton = document.querySelector(".sortButton");
+    let dataButton = document.querySelector(".generateButton");
 
     numberList = generateNumbers(NUM_VAL, MIN_VAL, MAX_VAL);
     updateDisplay();
